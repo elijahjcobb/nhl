@@ -49,4 +49,8 @@ export function fetchPlayerActionShot(playerId: string): string {
   return `https://cms.nhl.bamgrid.com/images/actionshots/${playerId}@2x.jpg`;
 }
 
+export function fetchTeamLogo(teamId: string): string {
+  return `https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${teamId}.svg`;
+}
+
 export * from "./types";
