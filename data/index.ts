@@ -16,7 +16,7 @@ async function fetcher<T>(path: string, isr = 10): Promise<T> {
 
 export async function fetchTeams(): Promise<Team[]> {
   const res = await fetcher<TeamsResponse>(`/teams`);
-  return res.teams;
+  return res.teams.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export async function fetchTeam(teamId: string): Promise<Team | undefined> {
@@ -45,11 +45,11 @@ export function fetchPlayerHeadShot(playerId: string): string {
   return `https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${playerId}@2x.jpg`;
 }
 
-export function fetchPlayerActionShot(playerId: string): string {
+export function fetchPlayerActionShot(playerId: string | number): string {
   return `https://cms.nhl.bamgrid.com/images/actionshots/${playerId}@2x.jpg`;
 }
 
-export function fetchTeamLogo(teamId: string): string {
+export function fetchTeamLogo(teamId: string | number): string {
   return `https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${teamId}.svg`;
 }
 

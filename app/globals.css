@@ -15,12 +15,40 @@ a {
   box-sizing: border-box;
 }
 
+:root {
+  --bg: white;
+  --fg: black;
+  --acc-1: #fafafa;
+  --acc-2: #eaeaea;
+  --acc-3: #ccc;
+  --acc-4: #aaa;
+  --acc-5: #444;
+  --acc-6: #222;
+  --pri: dodgerblue;
+  --sp: 8px;
+  --sp-s: 4px;
+  --sp-xs: 2px;
+  --sp-m: 16px;
+  --sp-l: 32px;
+  --sp-xl: 48px;
+  --sp-xxl: 64px;
+  --shadow: 0 0 var(--sp-m) var(--acc-2);
+}
+
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  :root {
+    --bg: black;
+    --fg: white;
+    --acc-6: #fff;
+    --acc-5: #aaa;
+    --acc-4: #888;
+    --acc-3: #444;
+    --acc-2: #1a1a1a;
+    --acc-1: #0a0a0a;
   }
-  body {
-    color: white;
-    background: black;
-  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
 }
