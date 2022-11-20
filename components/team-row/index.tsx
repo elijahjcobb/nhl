@@ -9,7 +9,7 @@ export function TeamRow({
 }: {
 	logo: string;
 	name: string;
-	id: string;
+	id: number;
 }) {
 	return <Link href={`/teams/${id}`} className={styles.row}>
 		<Image src={logo} alt={`team ${name} logo`} width={60} height={60} />

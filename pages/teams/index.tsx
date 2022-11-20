@@ -5,7 +5,7 @@ import { fetchTeamLogo, fetchTeams } from "../../data"
 import styles from "../../components/team-row/index.module.css";
 
 interface PageProps {
-	teams: { name: string, logo: string, id: string }[]
+	teams: { name: string, logo: string, id: number }[]
 }
 
 export default function Page({
