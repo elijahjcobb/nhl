@@ -1,0 +1,50 @@
+:root {
+  --bg: #181928;
+  --bg-2: #222232;
+  --black: #101019;
+  --acc-1: #fff;
+  --acc-2: #dadada;
+  --acc-3: #797979;
+  --pri: #30bced;
+  --sec: #d2b5ff;
+  --sp: 8px;
+  --sp-2: 4px;
+  --sp-4: 2px;
+  --sp2: 16px;
+  --sp3: 24px;
+  --sp4: 32px;
+  --sp6: 48px;
+  --sp7: 56px;
+  --sp8: 64px;
+  --sp9: 72px;
+  --sp10: 80px;
+  --nav: var(--sp8);
+  --foot: var(--sp10);
+  --shadow-s: 0 0 var(--sp-2) var(--black);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--bg);
+  color: var(--acc-1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

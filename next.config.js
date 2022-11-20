@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    appDir: true,
     fontLoaders: [
       { loader: "@next/font/google", options: { subsets: ["latin"] } },
     ],
@@ -12,6 +11,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "www-league.nhlstatic.com",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "cms.nhl.bamgrid.com",
         pathname: "**",
       },
     ],

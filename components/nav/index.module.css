@@ -1,0 +1,34 @@
+.nav {
+  box-shadow: var(--shadow);
+  padding: 0 var(--sp2);
+  width: 100%;
+  height: var(--nav);
+  background: var(--bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action {
+  width: 32px;
+  height: 32px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: var(--acc-1);
+  transition: 125ms ease-in-out;
+  transform-origin: center;
+}
+
+@media (hover: hover) {
+  .action:hover {
+    transform: scale(1.75);
+    opacity: 0.25;
+  }
+}
+
+.action:active {
+  transform: scale(1.75);
+  opacity: 0.25;
+}

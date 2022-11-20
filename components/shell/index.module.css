@@ -1,0 +1,26 @@
+.header {
+  top: 0;
+}
+
+.body {
+  position: absolute;
+  width: 100%;
+  top: var(--nav);
+  bottom: var(--foot);
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.footer {
+  height: var(--foot);
+  bottom: 0;
+}
+
+.header,
+.footer {
+  position: absolute;
+  box-shadow: var(--shadow-s);
+  z-index: 2;
+  background: var(--bg);
+  width: 100%;
+}

@@ -1,0 +1,35 @@
+.row {
+  background: var(--bg-2);
+  border-radius: var(--sp2);
+  height: 144px;
+  display: flex;
+  padding: var(--sp2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.position {
+  font-weight: 400;
+  color: var(--acc-3);
+  font-size: 0.75rem;
+}
+
+.jersey {
+  color: var(--pri);
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.head {
+  border-radius: 25%;
+  opacity: 0.75;
+}

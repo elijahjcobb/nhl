@@ -41,7 +41,7 @@ export async function fetchPlayer(
   return res.people[0];
 }
 
-export function fetchPlayerHeadShot(playerId: string): string {
+export function fetchPlayerHeadShot(playerId: string | number): string {
   return `https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${playerId}@2x.jpg`;
 }
 

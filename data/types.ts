@@ -166,7 +166,7 @@ export interface PersonDetail {
   firstName: string;
   lastName: string;
   primaryNumber: string;
-  birthDate: Date;
+  birthDate: string;
   currentAge: number;
   birthCity: string;
   birthStateProvince: string;
